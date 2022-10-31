@@ -1,5 +1,32 @@
 # TeslaChargeChallenge
 
+Your objective is to construct a search algorithm to find the minimum time path through the tesla
+network of supercharging stations. Each supercharger will refuel the vehicle at a different rate
+given in km/hr of charge time. Your route does not have to fully charge at every visited charger,
+so long as it never runs out of charge between two chargers. You should expect to need no more 
+than 4-6 hours to solve this problem. We suggest implementing a quick brute force method before
+attempting to find an optimal routine.
+
+
+You will be provided with a code skeleton which includes a header with the charger network data
+in the format:
+
+```name, latitude in degrees, longitude in degrees, charge rate in km/hr```
+
+
+You may compare your solutions against our reference implementation using the provided
+"checker" programs in either OSX or linux, make sure to use it to check your submission output
+against several different start and end chargers
+
+
+<b>Input</b>: Your program should take as input two strings: “start charger name”, “end charger name"
+
+
+<b>Output</b>: Your program’s only output should be a print to std::out of a string in the format:
+
+```initial charger name, first charger name, charge time in hrs, second charger name, charge time in hrs, …, …, goal charger name```
+
+
 ## IDEA:
 For this code challenge, My idea is to apply the classic A* searching to find a shortest path and then implement a better charging policy among this path.
 
