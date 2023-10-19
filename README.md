@@ -1,6 +1,6 @@
-# TeslaChargeChallenge
+# Charge Challenge
 
-Your objective is to construct a search algorithm to find the minimum time path through the tesla
+The objective is to construct a search algorithm to find the minimum time path through the a
 network of supercharging stations. Each supercharger will refuel the vehicle at a different rate
 given in km/hr of charge time. Your route does not have to fully charge at every visited charger,
 so long as it never runs out of charge between two chargers. You should expect to need no more 
